@@ -1,0 +1,6 @@
+var ps = require("fs")
+// ps.mkdirSync("Hello")
+ps.writeFileSync("Hello/user.txt", "engineering sucks\n")
+ps.appendFileSync("Hello/user.txt", "hello")
+var data = ps.readFileSync("Hello/user.txt", "utf-8")
+console.log(data)
